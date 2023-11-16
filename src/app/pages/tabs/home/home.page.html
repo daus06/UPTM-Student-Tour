@@ -1,0 +1,45 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title style="text-align: center;">Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  
+
+  <h5>Please select which one you want to browse :</h5>
+  <br><br>
+  <ion-grid >
+    <ion-row>
+      <ion-col size="4">
+        <ion-card (click)="goToFloorPage1()" class="square-card">
+          <button (click)="goToFloorPage1()"></button>
+          <ion-thumbnail>
+            <img [src]="'assets/maps.png'" />
+          </ion-thumbnail>
+          <ion-label  class="ion-text-wrap ion-text-centre">Floor Mapping</ion-label>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card (click)="goToFacilitiesPage()" class="square-card">
+          <button (click)="goToFacilitiesPage()"></button>
+          <ion-thumbnail>
+            <img [src]="'assets/facilities.png'" />
+          </ion-thumbnail>
+          <ion-label class="ion-text-wrap ion-text-centre">Facilities</ion-label>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card (click)="goToLecturerPage()" class="square-card">
+          <button (click)="goToLecturerPage()"></button>
+          <ion-thumbnail>
+            <img [src]="'assets/lecturer.png'" />
+          </ion-thumbnail>
+          <ion-label class="ion-text-wrap ion-text-centre">Lecturer</ion-label>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

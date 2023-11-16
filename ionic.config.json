@@ -1,0 +1,7 @@
+{
+  "name": "UPTM Student Tour",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

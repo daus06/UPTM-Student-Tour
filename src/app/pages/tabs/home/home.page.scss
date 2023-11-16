@@ -1,0 +1,38 @@
+.square-card {
+    height: 300px; /* Set the desired height for square cards */
+    margin: 10px; /* Add margin for spacing between cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .square-card ion-label {
+    margin-top: 10px; /* Add some spacing between the thumbnail and the label */
+  }
+  
+
+ion-row {
+    ion-col {
+        padding: 0 !important;
+        ion-card {
+            
+            border: 0.001vh solid var(--ion-color-medium);
+            height: 100px;
+            width: 100%;
+            margin: 0 !important;
+            padding: 0 !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            ion-label {
+                font-size: 0.7rem;
+                font-weight: 600;
+                margin-top: 5px;
+            }
+            ion-thumbnail {
+                height: 7vh;
+            }
+        }
+    }
+}

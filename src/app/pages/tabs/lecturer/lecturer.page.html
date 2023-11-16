@@ -1,0 +1,53 @@
+<ion-header >
+  <ion-img src="assets/headerbg.png"></ion-img>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Lecturer</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-searchbar
+[animated]="true"
+debounce="800"
+#searchInput
+placeholder="Search for name"
+(ionChange)="onSearchChange($event)"></ion-searchbar>
+<ion-content >
+  <ion-list lines="none">
+    <ion-item *ngFor="let store of name" class="ion-margin-top">
+      <ion-thumbnail slot="start">
+        <img [src]="'assets/' + store?.img"/>
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>{{ store?.name }}</ion-text>
+        <p *ngIf="store?.location">
+          <ion-text>
+            {{(store?.location)}}
+          </ion-text>
+        </p>
+        <p>
+          <ion-text>
+            {{store?.email}}@uptm.edu.my
+          </ion-text>
+        </p>
+        <p>
+          <ion-text>
+             {{store?.extno}} 
+          </ion-text>
+        </p>
+        <p>
+          <ion-text>
+             {{store?.faculty}} 
+          </ion-text>
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-label></ion-label>
+  
+</ion-content>

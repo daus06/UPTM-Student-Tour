@@ -1,0 +1,39 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Student Panel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+       
+      
+
+      <ion-card style="background: url('assets/lms.png') center/cover; background-size: 90% 90%;">
+        <ion-card-header>
+         
+        </ion-card-header>
+        <ion-card-content style="background: rgba(255, 255, 255, 0.7); margin-top: -30px;">
+          <!-- Your content goes here -->
+          <br><br><br><br><br>
+        </ion-card-content>
+        <ion-item button (click)="openUrl('https://lms.kuptm.edu.my/0723/login/index.php')">
+          Learning Management System
+        </ion-item>
+      </ion-card>
+       <br>
+      <ion-card style="background: url('assets/cms.png') center/cover; background-size: 130% 130%;">
+        <ion-card-header>
+         
+        </ion-card-header>
+        <ion-card-content style="background: rgba(255, 255, 255, 0.7); margin-top: -30px;">
+          <!-- Your content goes here -->
+          <br><br><br><br><br>
+        </ion-card-content>
+        <ion-item button (click)="openUrl('http://cmskl.kptm.edu.my:8000/cms/smp/index3.php?l1=Academic&l2=Subject%20Slip%20(Individu)')">
+          Campus Management System
+        </ion-item>
+      </ion-card>
+   
+</ion-content>
+
+

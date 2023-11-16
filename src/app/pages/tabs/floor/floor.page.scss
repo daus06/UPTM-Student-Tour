@@ -1,0 +1,28 @@
+ion-header {
+    margin-top: 30px;
+}
+
+ion-header {
+    margin-top: 30px;
+}
+
+ion-card {
+  display: none;
+}
+
+ion-card.show {
+  display: block;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px; /* Set the maximum width for the image container */
+  }
+  
+  .image-container img {
+    width: 100%;
+    transition: transform 0.5s; /* Add smooth transition for zooming effect */
+  }
+
+  

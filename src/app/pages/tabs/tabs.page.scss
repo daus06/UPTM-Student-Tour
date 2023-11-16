@@ -1,0 +1,29 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height to your preference */
+  }
+
+  .menu-card {
+     /* Background color for the card */
+    color: #fff; /* Text color for the title */
+    border-radius: 10px; /* Rounded corners for the card */
+    text-align: center; /* Center align the content */
+    padding: 20px; /* Add padding for spacing */
+    margin-left: 35px;
+    margin-right: 35px;
+    
+  }
+  
+  .menu-title {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
+    line-height: 1.2; /* Line height for the title */
+    text-align: center;   
+    color: black;
+
+   
+  }
+  
+  
